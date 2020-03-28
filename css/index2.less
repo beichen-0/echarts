@@ -1,0 +1,319 @@
+// 地图区域样式开始
+.map {
+  display: flex;
+  flex-direction: column;
+  height: 23.75rem;
+  margin-bottom: .833333rem;
+  margin-top: 2.8rem;
+
+  >span {
+    color: #fff;
+
+    .icon-cube {
+      color: red;
+      margin-right: .416667rem;
+    }
+  }
+
+  .maparea {
+    flex: 1;
+  }
+}
+
+// 用户总量统计
+.users {
+  height: 14.333333rem;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    padding: .833333rem;
+    box-sizing: border-box;
+
+    >h2 {
+      font-size: .833333rem;
+      color: #fff;
+    }
+
+    >.chart {
+      flex: 1;
+      display: flex;
+
+      .bar {
+        flex: 3;
+      }
+
+      .data {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #021137;
+        padding-left: .833333rem;
+
+        >.item {
+          h2 {
+            color: #fff;
+          }
+
+          span {
+            font-size: .866667rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 订单销售区域
+.order {
+  height: 6.633333rem;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+
+    >.tabs {
+      color: #1543a7;
+
+      >a {
+        padding: 0 10px;
+        border-right: 2px solid #0ff;
+
+        &.active {
+          color: #fff;
+        }
+      }
+
+      >a:nth-child(4) {
+        border-right: none
+      }
+    }
+
+    .data {
+      flex: 1;
+      display: flex;
+      margin-top: .608333rem;
+
+      .item {
+        flex: 1;
+        padding-left: .833333rem;
+
+        h2 {
+          color: #fff;
+          font-size: 1.25rem;
+        }
+
+        span {
+          font-size: .541667rem;
+        }
+      }
+    }
+  }
+}
+
+// 销售统计
+.sales {
+  height: 10.416667rem;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+
+    .tabs {
+      display: flex;
+      margin-bottom: .833333rem;
+
+      h2 {
+        font-size: 1rem;
+        color: #fff;
+        padding: 0 .833333rem;
+        border-right: 2px solid #0ff;
+      }
+
+      a {
+        margin: 0 .833333rem;
+        padding: 0 .166667rem;
+
+        &.active {
+          background-color: #4c9bfd;
+          color: #fff;
+          border-radius: .166667rem;
+        }
+      }
+    }
+
+    .line {
+      // 占据整个父窗口剩余的空间(高度)
+      flex: 1;
+    }
+  }
+}
+
+// 渠道和季度
+.channel {
+  height: 9.833333rem;
+  display: flex;
+
+  .qudao {
+    flex: 1;
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      padding-left: .925rem;
+
+      >h2 {
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 1.041667rem;
+      }
+
+      >.data {
+        flex: 1;
+        display: flex;
+        // 添加换行
+        flex-wrap: wrap;
+
+        >.item {
+          width: 50%;
+
+          h2 {
+            font-size: 1.25rem;
+            color: #fff;
+            line-height: 0.6;
+          }
+
+          span {
+            font-size: .583333rem;
+          }
+        }
+      }
+    }
+  }
+
+  .jindu {
+    flex: 1;
+    margin-left: .833333rem;
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1rem;
+        color: #fff;
+      }
+
+      .chart {
+        height: 3.625rem;
+        position: relative;
+
+        // 定位：垂直和水平方向都居中
+        span {
+          color: #fff;
+          font-size: 1.05rem;
+          position: absolute;
+          // 定位的单位如果是百分比，那么它是参照父容器的宽高
+          left: 50%;
+          top: 50%;
+          // 通过transform实现元素的偏移，transform的偏移距离单位如果是百分比，则是参照自身宽高
+          transform: translate(-50%, -20%);
+        }
+
+        .circle {
+          // 图表要显示，必需有高度
+          height: 100%;
+        }
+      }
+
+      .data {
+        display: flex;
+        justify-content: space-around;
+
+        .item {
+          h2 {
+            font-size: 1rem;
+            color: #fff;
+          }
+
+          span {
+            font-size: .583333rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 排行 榜
+.pahan {
+  height: 12.083333rem;
+
+  .inner {
+    display: flex;
+
+    .country {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: .916667rem;
+      }
+
+      .data {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: .75rem;
+
+        i {
+          font-size: 1.25rem;
+          margin-right: .833333rem;
+        }
+      }
+    }
+
+    .provence {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: .916667rem;
+        margin-bottom: .833333rem;
+
+        >span:last-child {
+          float: right;
+        }
+      }
+
+      .data {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+
+        .left,
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: .75rem;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+
+        .right {
+          margin-left: 2.083333rem;
+          background-color: #02133c;
+        }
+      }
+    }
+  }
+}

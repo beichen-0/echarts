@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>可视化项目</title>
+  <!-- 样式 -->
+  <link rel="stylesheet" href="./fonts/icomoon.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index2.css">
+  <!-- 引入js -->
+  <script src="./js/echarts.min.js"></script>
+  <!-- china地衅图表，它是echarts的一个扩展，基于echarts -->
+  <script src="./js/china.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/mymap.js"></script>
+</head>
+
+<body>
+  <!-- 整体结构 -->
+  <div class="layout">
+    <!-- 第一列 -->
+    <div class="column">
+      <!-- 整体信息 -->
+      <div class="info pannel">
+        <div class="inner">
+          <div class="item">
+            <h2>2190</h2>
+            <span>
+              <i class="icon-dot"></i>设备总数
+            </span>
+          </div>
+          <div class="item">
+            <h2>190</h2>
+            <span>
+              <i class="icon-dot" style="color:green"></i>设备总数
+            </span>
+          </div>
+          <div class="item">
+            <h2>290</h2>
+            <span>
+              <i class="icon-dot" style="color:green"></i>设备总数
+            </span>
+          </div>
+          <div class="item">
+            <h2>210</h2>
+            <span>
+              <i class="icon-dot" style="color:red"></i>设备总数
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- 监控 -->
+      <div class="monitor pannel">
+        <div class="inner">
+          <div class="tabs">
+            <a href="javscript:;" class="active" data-index='0'>故障设备监控</a>
+            <a href="javscript:;" data-index='1'>异常设备监控</a>
+          </div>
+          <div class="content" style="display: block;">
+            <div class="title">
+              <span>故障时间</span>
+              <span>设备地址</span>
+              <span>异常代码</span>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180909</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180910</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180911</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                  <span class="icon-dot"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <span>异常时间</span>
+              <span>设备地址</span>
+              <span>异常代码</span>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+                <li>
+                  <span>20180908</span>
+                  <span>广州黑马程序员欢迎你</span>
+                  <span>10001</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 占位站点统计 -->
+      <div class="sites pannel">
+        <div class="inner">
+          <h2>点位站点分布统计</h2>
+          <div class="chart">
+            <!-- 预留的图表区域 -->
+            <div class="pie"></div>
+            <div class="data">
+              <div class="item">
+                <h2>2190</h2>
+                <span>
+                  <i class="icon-dot"></i>设备总数
+                </span>
+              </div>
+              <div class="item">
+                <h2>190</h2>
+                <span>
+                  <i class="icon-dot" style="color:green"></i>设备总数
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第二列 -->
+    <div class="column">
+      <!-- 地图 -->
+      <div class="map">
+        <span>
+          <i class="icon-cube"></i>设备数据统计
+        </span>
+        <div class="maparea"></div>
+      </div>
+      <!-- 用户问题统计 -->
+      <div class="users pannel">
+        <div class="inner">
+          <h2>全国用户总量统计</h2>
+          <div class="chart">
+            <div class="bar"></div>
+            <div class="data">
+              <div class="item">
+                <h2>2190</h2>
+                <span>
+                  <i class="icon-dot"></i>设备总数
+                </span>
+              </div>
+              <div class="item">
+                <h2>190</h2>
+                <span>
+                  <i class="icon-dot" style="color:green"></i>设备总数
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第三列 -->
+    <div class="column">
+      <!-- 订单和销售 -->
+      <div class="order pannel">
+        <div class="inner">
+          <div class="tabs">
+            <a href="javascript:;" class="active" data-type='day365'>365天</a>
+            <a href="javascript:;" data-type='day90'>90天</a>
+            <a href="javascript:;" data-type='day30'>30天</a>
+            <a href="javascript:;" data-type='day1'>24小时</a>
+          </div>
+          <div class="data">
+            <div class="item">
+              <h2 class="order_orders">2190</h2>
+              <span>
+                <i class="icon-dot"></i>订单量
+              </span>
+            </div>
+            <div class="item">
+              <h2 class="order_count">190</h2>
+              <span>
+                <i class="icon-dot" style="color:green"></i>销售额(万元)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 销售统计 -->
+      <div class="sales pannel">
+        <div class="inner">
+          <div class="tabs">
+            <h2>销售额统计</h2>
+            <!-- 前台页面的属性定义不是自由的，很多时候都必须根据后台的设定来设置
+                        你在前台页面不能乱键 -->
+            <a href="javascript:;" class="active" data-type='year'>年</a>
+            <a href="javascript:;" data-type='quarter'>季</a>
+            <a href="javascript:;" data-type='month'>月</a>
+            <a href="javascript:;" data-type='week'>周</a>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <!-- 渠道和季度 -->
+      <div class="channel">
+        <div class="qudao pannel">
+          <div class="inner">
+            <h2>渠道分布</h2>
+            <div class="data">
+              <div class="item">
+                <h2>2190</h2>
+                <span>
+                  <i class="icon-dot"></i>机场
+                </span>
+              </div>
+              <div class="item">
+                <h2>190</h2>
+                <span>
+                  <i class="icon-dot" style="color:green"></i>商场
+                </span>
+              </div>
+              <div class="item">
+                <h2>2190</h2>
+                <span>
+                  <i class="icon-dot"></i>地铁
+                </span>
+              </div>
+              <div class="item">
+                <h2>190</h2>
+                <span>
+                  <i class="icon-dot" style="color:green"></i>火车站
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jindu pannel">
+          <div class="inner">
+            <h2>一季度销售进度</h2>
+            <div class="chart">
+              <div class="circle"></div>
+              <span>75%</span>
+            </div>
+            <div class="data">
+              <div class="item">
+                <h2>2190</h2>
+                <span>
+                  <i class="icon-dot"></i>销售额(万元)
+                </span>
+              </div>
+              <div class="item">
+                <h2>190</h2>
+                <span>
+                  <i class="icon-dot" style="color:green"></i>同比增长
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 排行榜 -->
+      <div class="pahan pannel">
+        <div class="inner">
+          <div class="country">
+            <div class="title">全国热榜</div>
+            <div class="data">
+              <span>
+                <i class="icon-cup1" style="color:red"></i>可爱多
+              </span>
+              <span>
+                <i class="icon-cup2" style="color:green"></i>可恨多
+              </span>
+              <span>
+                <i class="icon-cup3" style="color:blue"></i>可怜多
+              </span>
+            </div>
+          </div>
+          <div class="provence">
+            <div class="title">
+              <span>各省热销</span>
+              <span>//近30日//</span>
+            </div>
+            <div class="data">
+              <ul class="left">
+                <li>
+                  <span>北京</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+                <li>
+                  <span>广州</span>
+                  <span>25.233 <i class="icon-down"></i></span>
+                </li>
+                <li>
+                  <span>武汉</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+                <li>
+                  <span>北京</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+                <li>
+                  <span>上海</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+              </ul>
+              <ul class="right">
+                <li>
+                  <span>北京</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+                <li>
+                  <span>广州</span>
+                  <span>25.233 <i class="icon-down"></i></span>
+                </li>
+                <li>
+                  <span>武汉</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+                <li>
+                  <span>北京</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+                <li>
+                  <span>上海</span>
+                  <span>25.233 <i class="icon-up"></i></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

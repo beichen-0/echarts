@@ -1,0 +1,246 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  height: 23.75rem;
+  margin-bottom: 0.833333rem;
+  margin-top: 2.8rem;
+}
+.map > span {
+  color: #fff;
+}
+.map > span .icon-cube {
+  color: red;
+  margin-right: 0.416667rem;
+}
+.map .maparea {
+  flex: 1;
+}
+.users {
+  height: 14.333333rem;
+}
+.users .inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0.833333rem;
+  box-sizing: border-box;
+}
+.users .inner > h2 {
+  font-size: 0.833333rem;
+  color: #fff;
+}
+.users .inner > .chart {
+  flex: 1;
+  display: flex;
+}
+.users .inner > .chart .bar {
+  flex: 3;
+}
+.users .inner > .chart .data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #021137;
+  padding-left: 0.833333rem;
+}
+.users .inner > .chart .data > .item h2 {
+  color: #fff;
+}
+.users .inner > .chart .data > .item span {
+  font-size: 0.866667rem;
+}
+.order {
+  height: 6.633333rem;
+}
+.order .inner {
+  display: flex;
+  flex-direction: column;
+}
+.order .inner > .tabs {
+  color: #1543a7;
+}
+.order .inner > .tabs > a {
+  padding: 0 10px;
+  border-right: 2px solid #0ff;
+}
+.order .inner > .tabs > a.active {
+  color: #fff;
+}
+.order .inner > .tabs > a:nth-child(4) {
+  border-right: none;
+}
+.order .inner .data {
+  flex: 1;
+  display: flex;
+  margin-top: 0.608333rem;
+}
+.order .inner .data .item {
+  flex: 1;
+  padding-left: 0.833333rem;
+}
+.order .inner .data .item h2 {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.order .inner .data .item span {
+  font-size: 0.541667rem;
+}
+.sales {
+  height: 10.416667rem;
+}
+.sales .inner {
+  display: flex;
+  flex-direction: column;
+}
+.sales .inner .tabs {
+  display: flex;
+  margin-bottom: 0.833333rem;
+}
+.sales .inner .tabs h2 {
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 0.833333rem;
+  border-right: 2px solid #0ff;
+}
+.sales .inner .tabs a {
+  margin: 0 0.833333rem;
+  padding: 0 0.166667rem;
+}
+.sales .inner .tabs a.active {
+  background-color: #4c9bfd;
+  color: #fff;
+  border-radius: 0.166667rem;
+}
+.sales .inner .line {
+  flex: 1;
+}
+.channel {
+  height: 9.833333rem;
+  display: flex;
+}
+.channel .qudao {
+  flex: 1;
+}
+.channel .qudao .inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.925rem;
+}
+.channel .qudao .inner > h2 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.041667rem;
+}
+.channel .qudao .inner > .data {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.channel .qudao .inner > .data > .item {
+  width: 50%;
+}
+.channel .qudao .inner > .data > .item h2 {
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 0.6;
+}
+.channel .qudao .inner > .data > .item span {
+  font-size: 0.583333rem;
+}
+.channel .jindu {
+  flex: 1;
+  margin-left: 0.833333rem;
+}
+.channel .jindu .inner {
+  display: flex;
+  flex-direction: column;
+}
+.channel .jindu .inner h2 {
+  font-size: 1rem;
+  color: #fff;
+}
+.channel .jindu .inner .chart {
+  height: 3.625rem;
+  position: relative;
+}
+.channel .jindu .inner .chart span {
+  color: #fff;
+  font-size: 1.05rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+}
+.channel .jindu .inner .chart .circle {
+  height: 100%;
+}
+.channel .jindu .inner .data {
+  display: flex;
+  justify-content: space-around;
+}
+.channel .jindu .inner .data .item h2 {
+  font-size: 1rem;
+  color: #fff;
+}
+.channel .jindu .inner .data .item span {
+  font-size: 0.583333rem;
+}
+.pahan {
+  height: 12.083333rem;
+}
+.pahan .inner {
+  display: flex;
+}
+.pahan .inner .country {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.pahan .inner .country .title {
+  font-size: 0.916667rem;
+}
+.pahan .inner .country .data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.75rem;
+}
+.pahan .inner .country .data i {
+  font-size: 1.25rem;
+  margin-right: 0.833333rem;
+}
+.pahan .inner .provence {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.pahan .inner .provence .title {
+  font-size: 0.916667rem;
+  margin-bottom: 0.833333rem;
+}
+.pahan .inner .provence .title > span:last-child {
+  float: right;
+}
+.pahan .inner .provence .data {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.pahan .inner .provence .data .left,
+.pahan .inner .provence .data .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+.pahan .inner .provence .data .left li,
+.pahan .inner .provence .data .right li {
+  display: flex;
+  justify-content: space-between;
+}
+.pahan .inner .provence .data .right {
+  margin-left: 2.083333rem;
+  background-color: #02133c;
+}
